@@ -5,11 +5,12 @@ import { InfoPokemon } from './pages/InfoPokemon';
 function App() {
   return ( 
   <BrowserRouter >
-    <Routes>
+    <Routes >
       <Route path="/" element={<Home />}/>
-      <Route path="/info" element={<InfoPokemon />}/>
+      <Route path="/info/:id" element={<InfoPokemon />}/>
     </Routes>
-  </BrowserRouter> )
+  </BrowserRouter> 
+  )
 }
 
 export default App;

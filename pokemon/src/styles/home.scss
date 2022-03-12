@@ -1,0 +1,32 @@
+.card-table {
+  margin: 3rem;
+  
+  strong {
+    color: var(--green-500);
+  }
+
+  .spinner-border {
+    margin-left: 26rem;
+  }
+
+  .row-cols-md-4 > * {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--purple-300);
+
+    .mb-2 {
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.5s;
+      }
+    }
+
+    .card-text:last-child {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    display: none;
+  }
+}

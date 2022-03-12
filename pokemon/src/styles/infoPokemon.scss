@@ -1,0 +1,52 @@
+.info-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: -20px;
+
+  .card {
+    min-width: 16rem;
+
+    .card-title {
+      font-weight: 800;
+      color: var(--purple-300);
+
+      strong {
+        color: var(--green-500);
+      }
+    }
+
+    .card-text {
+      font-weight: 700;
+      color: var(--gray-800);
+    }
+  }
+}
+.modal-info td, th, tr, thead, tbody {
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 0.2rem solid #333;
+  text-align: center;
+}
+
+.modal-body {
+  h3 {
+    font-weight: 800;
+    color: var(--purple-300);
+    margin-top: 15px;
+  }
+}
+
+
+.header {
+  button {
+    margin: 1rem;
+
+    a {
+      color: #fff;
+      text-decoration: none
+    };
+  }
+}
