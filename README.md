@@ -29,6 +29,11 @@ $ yarn start // inicia
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+<a href="https://henrique-hoi-dev.github.io/portfolio/img/avatar.a10a14e0.jpeg">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/62766753?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Henrique Hoinacki</b></sub></a> <a href="https://henrique-hoi-dev.github.io/portfolio/" title="Rocketseat">🚀</a>
+
 Feito por Henrique Hoinacki 👋🏽 Entre em contato!
 
 [![Twitter Badge](https://img.shields.io/badge/-@henriquehoi-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/HenriqueHoi)](https://twitter.com/HenriqueHoi) [![Linkedin Badge](https://img.shields.io/badge/-Henrique-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/henrique-hoinacki-a98b851a5/)
