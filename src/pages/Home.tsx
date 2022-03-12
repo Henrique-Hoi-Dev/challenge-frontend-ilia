@@ -9,20 +9,10 @@ import Spinner from 'react-bootstrap/Spinner'
 import '../styles/home.scss'
 import PokemonSearch from '../components/PokemonSearch';
 import { PokemonCarousel } from '../components/PokemonCarousel';
-
-interface Dados {
-  id: string;
-  name: string;
-  types: [string];
-  imageUrl: string;
-}
-
-type Pokemos = {
-  cards: Dados[];
-}
+import PokemonsHome from '../interfaces/Home.interface';
 
 export function Home() {
-  const [apiURL, setApiURL] = useState<Pokemos | null>(null)
+  const [apiURL, setApiURL] = useState<PokemonsHome| null>(null)
   const [loading, setLoading] = useState<boolean>(false);
 
   useEffect(() => {
@@ -37,7 +27,7 @@ export function Home() {
   return ( 
     <>
       <PokemonSearch />
-      <PokemonCarousel card={apiURL?.cards}/>
+      <PokemonCarousel cards={apiURL?.cards}/>
       <div className='card-table'>
         {loading && <Spinner animation="border" role="status">
             <span className="visually-hidden">Loading...</span>

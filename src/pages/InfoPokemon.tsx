@@ -7,35 +7,11 @@ import Modal from 'react-bootstrap/Modal'
 
 import '../styles/infoPokemon.scss'
 import { Header } from "../components/Header";
+import PokemonInfo from "../interfaces/infoPokemon.interface";
 
-interface Value {
-  type: string;
-  value: string;
-}
-
-interface Dano {
-  name: string;
-  text: string;
-  damage: string;
-  convertedEnergyCost: string;
-}
-
-interface Dados {
-  id: string;
-  name: string;
-  types: [string];
-  imageUrl: string;
- resistances: Value[];
- weaknesses: Value[];
- attacks: Dano[];
-}
-
-type Pokemos = {
-  card: Dados;
-}
 
 export function InfoPokemon() {
-  const [api, setApi] = useState<Pokemos>();
+  const [api, setApi] = useState<PokemonInfo | null>(null);
   const { id } = useParams();
 
   const [show, setShow] = useState(false);

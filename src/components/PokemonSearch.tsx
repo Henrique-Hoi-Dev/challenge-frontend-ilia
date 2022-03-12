@@ -3,13 +3,8 @@ import axios from "axios";
 import Spinner from 'react-bootstrap/Spinner'
 
 import '../styles/search.scss'
+import Pokemon from "../interfaces/Search.interface";
 
-interface Pokemon {
-  name: string;
-  base_experience: number;
-  numberOfAbilities: number;
-  imageURL: string;
-}
 
 const PokemonSearch: React.FC = () => {
 
@@ -57,7 +52,7 @@ const PokemonSearch: React.FC = () => {
       <h1>Por favor, digite o nome do pokémon abaixo</h1>
       <div className="input">
         <input type="text"  ref={pokemonRef} />
-        <button className="btn btn-primary" onClick={() => onSearchHandler()} >
+        <button className="btn" onClick={() => onSearchHandler()} >
           Buscar...
         </button>
       </div>

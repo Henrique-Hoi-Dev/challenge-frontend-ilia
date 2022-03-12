@@ -4,6 +4,10 @@
   justify-content: center;
   align-items: center;
 
+  div {
+    font-weight: 600;
+  }
+
   h1 {
     font-weight: 700;
     color: var(--gray-800);
@@ -19,7 +23,7 @@
       height: 35px;
 
       border-radius: 0.5rem;
-      border: 2px solid var(--purple-500); 
+      border: 2px solid var(--black-300); 
 
       font-weight: bold;
       color: var(--gray-800);
@@ -28,6 +32,15 @@
 
     button {
       margin-left: 10px;
+      background: var(--yellow-300);
+      color: var(--black-300);
+      font-weight: bold;
+      border: 2px solid var(--yellow-400);
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.5s;
+      }
     }
   }
 
